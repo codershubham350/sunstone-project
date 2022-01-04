@@ -9,7 +9,6 @@ const SiteHeader = ({ globalData, sitemapNode, page }) => {
   // open / close mobile nav
   const [open, setOpen] = useState(false);
 
-
   if (!header) {
     return (
       <header className="relative p-8 text-center">
@@ -31,9 +30,9 @@ const SiteHeader = ({ globalData, sitemapNode, page }) => {
                   alt={header.logo.label}
                   title={header.logo.siteName}
                 />
-                <p className="font-bold text-xl text-secondary-500 ml-3 mt-2">
+                {/* <p className="font-bold text-xl text-secondary-500 ml-3 mt-2">
                   {header.siteName}
-                </p>
+                </p> */}
               </a>
             </Link>
           </div>
@@ -168,7 +167,7 @@ SiteHeader.getCustomInitialProps = async function ({
     let header = await api.getContentList({
       referenceName: "siteheader",
       languageCode: languageCode,
-	  take: 1
+      take: 1,
     });
 
     // if we have a header, set as content item
@@ -206,7 +205,7 @@ SiteHeader.getCustomInitialProps = async function ({
 
   // return clean object...
   return {
-    siteName: contentItem.fields.siteName,
+    //siteName: contentItem.fields.siteName,
     logo: contentItem.fields.logo,
     links,
   };
