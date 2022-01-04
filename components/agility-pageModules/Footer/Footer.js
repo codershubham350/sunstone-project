@@ -56,30 +56,32 @@ const Footer = (props) => {
         </div>
         {/* <!-- <FooterContent module={props.module} /> --> */}
         <div className="ft-main-item">
-          <h2 className="ft-title">Contact</h2>
+          <h2 className="ft-title">{fields.footer3}</h2>
           <ul>
             <li>
-              <a href="#">Help</a>
+              <a href={fields.link001.href}>{fields.link001.text}</a>
             </li>
             <li>
-              <a href="#">Sales</a>
+              <a href={fields.link002.href}>{fields.link002.text}</a>
             </li>
             <li>
-              <a href="#">Advertise</a>
+              <a href={fields.link003.href}>{fields.link003.text}</a>
             </li>
           </ul>
         </div>
         <div className="ft-main-item">
-          <h2 className="ft-title">Stay Updated</h2>
-          <p>Get free updates before others do!</p>
-          <form>
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter email address"
-            />
-            <input type="submit" value="Subscribe" />
-          </form>
+          <h2 className="ft-title">{fields.footer4}</h2>
+          <ul>
+            <li>
+              <a href={fields.link0001.href}>{fields.link0001.text}</a>
+            </li>
+            <li>
+              <a href={fields.link0002.href}>{fields.link0002.text}</a>
+            </li>
+            <li>
+              <a href={fields.link0003.href}>{fields.link0003.text}</a>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -128,7 +130,7 @@ const Footer = (props) => {
           <li>
             <a href="#">Privacy Policy</a>
           </li>
-          <li>&copy; 2021 by Meow Media, LLC</li>
+          <li>&copy; Copyright 2020. Sunstone Eduversity</li>
         </ul>
       </section>
     </footer>
