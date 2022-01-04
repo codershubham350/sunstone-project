@@ -7,7 +7,7 @@ import Footer from "./Footer/Footer";
 import FooterContent1 from "./Footer/FooterContent1";
 import FooterContent2 from "./Footer/FooterContent2";
 import FooterContent3 from "./Footer/FooterContent3";
-import FooterComponent from "./Footer/FooterComponent";
+// import FooterComponent from "./Footer/FooterComponent";
 import ImageSlider from "./Image-Slider/ImageSlider";
 import TextBlockWithImage from "./TextBlockWithImage";
 
@@ -17,7 +17,7 @@ import TextBlockWithImage from "./TextBlockWithImage";
 const allModules = [
   { name: "TextBlockWithImage", module: TextBlockWithImage },
   { name: "Footer", module: Footer },
-  { name: "FooterComponent", module: FooterComponent },
+  // { name: "FooterComponent", module: FooterComponent },
   { name: "FooterContent1", module: FooterContent1 },
   { name: "FooterContent2", module: FooterContent2 },
   { name: "FooterContent3", module: FooterContent3 },
